@@ -7,8 +7,8 @@ resource "aws_instance" "web" {
   instance_type = "t2.micro"
 
   tags = {
-    Name = "Servidor-IaC-Demo"
-    Owner = "David Vera"
-    Environment = "Development"
+    Name = ""
+    Owner = ""
+    Environment = ""
   }
 }
