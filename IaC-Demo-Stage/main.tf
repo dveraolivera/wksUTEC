@@ -1,0 +1,14 @@
+provider "aws" {
+  region = "us-east-1"
+}
+
+resource "aws_instance" "web" {
+  ami           = "ami-0150ccaf51ab55a51"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name = "Servidor-IaC-Demo"
+    Owner = "David Vera"
+    Environment = "Test"
+  }
+}
