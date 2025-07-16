@@ -9,6 +9,6 @@ resource "aws_instance" "web" {
   tags = {
     Name = "Servidor-IaC-Demo"
     Owner = "David Vera"
-    Environment = "Test"
+    Environment = "Development"
   }
 }
